@@ -6,8 +6,13 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <main className="container mx-auto max-w-[1140px]">
-        <Hero />
+      <main>
+        <div className="hero-gradient">
+          <div className="container mx-auto max-w-[1140px]">
+            <Hero />
+          </div>
+        </div>
+        <div className="container mx-auto max-w-[1140px]"></div>
       </main>
     </div>
   );

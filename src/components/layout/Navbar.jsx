@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="shadow-md md:hover:shadow-xl md:transition-[box-shadow] md:shadow-sm relative">
+    <nav className="md:hover:shadow-md md:transition-[box-shadow] relative">
       <div className="relative md:flex justify-between">
         <div className="p-3 flex justify-between items-center">
           <a
