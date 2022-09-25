@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-list {
+  overflow: visible;
+}
+
 @layer utilities {
   .hero-gradient {
     background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255))

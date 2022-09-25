@@ -18,6 +18,7 @@ module.exports = {
         },
         green: {
           light: "rgb(230, 252, 255)",
+          bright: "rgb(0, 184, 217)",
         },
       },
     },
