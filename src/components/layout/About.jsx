@@ -26,14 +26,19 @@ const About = () => {
     <div className="p-4 flex flex-col gap-8 lg:flex-row border-t border-b border-inherit py-16">
       {data.map((item) => {
         return (
-          <div key={item.title} className="lg:flex lg:items-start lg:gap-x-6">
+          <div
+            key={item.title}
+            className="lg:flex lg:items-start lg:gap-x-6 flex-1"
+          >
             <img
               src={item.image}
               alt={item.title}
               className="w-1/5 max-w-[100px] mb-4 lg:w-12 xl:w-16"
             />
             <div>
-              <h2 className="font-semibold text-lg">{item.title}</h2>
+              <h2 className="font-semibold text-lg lg:text-2xl">
+                {item.title}
+              </h2>
               <p className="my-4 font-light">{item.text}</p>
               <a
                 href="#"

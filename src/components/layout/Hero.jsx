@@ -21,7 +21,7 @@ const Hero = () => {
           <input
             type="email"
             placeholder="Email"
-            className="hidden rounded-md sm:block p-3 w-full border border-inherit mt-8 md:w-96 xl:m-0 xl:w-auto"
+            className="hidden rounded-md sm:block p-3 w-full border border-inherit mt-8 md:w-96 xl:m-0 xl:w-auto invalid:border-pink-700 invalid:border-[2px]"
           />
           <button className="block rounded-md bg-blue-light text-white w-full p-2 my-2 transition-colors duration-150 hover:bg-blue-medium sm:w-fit sm:text-sm sm:px-8 sm:py-4 sm:mt-4 xl:m-0 xl:ml-4">
             Sign up - it's free
@@ -30,11 +30,11 @@ const Hero = () => {
 
         <a
           href="#"
-          className="flex justify-center items-center space-x-2 [&_*]:text-blue-medium sm:justify-start sm:p-2"
+          className="flex justify-center items-center space-x-2 w-fit mx-auto group [&_*]:text-blue-medium sm:justify-start sm:p-2 sm:mx-0"
         >
-          <span className="underline peer">Watch Video</span>
+          <span className="underline">Watch Video</span>
           <svg
-            className="peer-hover:translate-x-1 transition-transform duration-200"
+            className="group-hover:translate-x-1 transition-transform duration-200"
             fill="none"
             height="24"
             viewBox="0 0 24 24"
