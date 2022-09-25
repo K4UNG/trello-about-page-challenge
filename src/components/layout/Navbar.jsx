@@ -38,10 +38,25 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="w-7 h-5 relative md:hidden" onClick={toggleMenu}>
-            <span className="w-full absolute h-[3px] bg-black rounded-full left-0 top-0" />
-            <span className="w-full absolute h-[3px] bg-black rounded-full left-0 top-1/2 -translate-y-1/2" />
-            <span className="w-full absolute h-[3px] bg-black rounded-full left-0 bottom-0" />
+          <button
+            className="w-7 h-5 relative md:hidden [&_*]:duration-150"
+            onClick={toggleMenu}
+          >
+            <span
+              className={`w-full absolute h-[3px] bg-black rounded-full left-0 top-0 origin-left ${
+                menu ? "rotate-45" : "rotate-0"
+              }`}
+            />
+            <span
+              className={`absolute w-full h-[3px] bg-black rounded-full left-0 top-1/2 -translate-y-1/2 ${
+                menu ? "scale-x-0 opacity-0" : "opacity-100 scale-x-100"
+              } origin-center`}
+            />
+            <span
+              className={`w-full absolute h-[3px] bg-black rounded-full left-0 bottom-0 origin-left ${
+                menu ? "-rotate-45 translate-y-[3px]" : "rotate-0"
+              }`}
+            />
           </button>
         </div>
 
