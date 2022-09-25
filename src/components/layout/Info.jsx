@@ -23,7 +23,7 @@ const Info = () => {
       </div>
       <div className="max-w-[1140px]">
         <img src="./board.webp" alt="board" className="my-8 w-full" />
-        <p className="text-lg">
+        <p className="text-lg mb-8">
           Join over 2,000,000 teams worldwide that are using Trello to get more
           done.
         </p>
@@ -39,17 +39,13 @@ const Info = () => {
             );
           })}
         </div>
-        <div className="grid sm:grid-cols-2 md:w-fit md:mx-auto content-center">
-          <img
-            src="./Visa.svg"
-            alt="Visa"
-            className="w-40 m-2 sm:mx-auto sm:m-4 md:mx-8"
-          />
-          <img
-            src="./Zoom.webp"
-            alt="Zoom"
-            className="w-40 m-2 sm:mx-auto sm:m-4 md:mx-8"
-          />
+        <div className="flex flex-col md:justify-center items-center sm:flex-row">
+          <div className="sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+            <img src="./Visa.svg" alt="Visa" className="w-40 m-2" />
+          </div>
+          <div className="sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+            <img src="./Zoom.webp" alt="Zoom" className="w-40 m-2" />
+          </div>
         </div>
       </div>
     </div>
