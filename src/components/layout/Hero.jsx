@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="px-4 py-8 flex flex-col gap-8 max-w-[540px] mx-auto sm:flex-row sm:items-center sm:max-w-screen-sm sm:py-24 sm:gap-x-12 md:max-w-screen-md md:gap-x-28 xl:max-w-none xl:py-16">
+    <div className="px-4 py-8 flex flex-col gap-8 max-w-[540px] mx-auto sm:flex-row sm:items-center sm:max-w-none sm:py-24 sm:gap-x-12 md:gap-x-28 xl:max-w-none xl:py-16">
       <img
         src="./hero-mobile.webp"
         alt="mobile hero seciton"
