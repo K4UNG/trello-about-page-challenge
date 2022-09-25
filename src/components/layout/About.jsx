@@ -40,10 +40,7 @@ const About = () => {
                 {item.title}
               </h2>
               <p className="my-4 font-light">{item.text}</p>
-              <a
-                href="#"
-                className="bg-blue-light inline-block px-4 py-3 rounded-md text-white text-sm transition-colors duration-200 hover:bg-blue-medium"
-              >
+              <a href="#" className="btn">
                 {item.button}
               </a>
             </div>

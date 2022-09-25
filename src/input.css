@@ -8,3 +8,9 @@
       no-repeat;
   }
 }
+
+@layer components {
+  .btn {
+    @apply bg-blue-light inline-block px-4 py-3 rounded-md text-white text-sm transition-colors duration-200 hover:bg-blue-medium;
+  }
+}
