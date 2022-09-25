@@ -13,7 +13,7 @@ const App = () => {
             <Hero />
           </div>
         </div>
-        <div className="container bg-slate-300 mx-auto xl:max-w-[1140px]">
+        <div className="container mx-auto xl:max-w-[1140px]">
           <About />
         </div>
       </main>

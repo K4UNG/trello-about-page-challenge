@@ -23,13 +23,25 @@ const data = [
 
 const About = () => {
   return (
-    <div>
+    <div className="p-4 flex flex-col gap-8 lg:flex-row border-t border-b border-inherit py-16">
       {data.map((item) => {
         return (
-          <div key={item.title}>
-            <img src={item.image} alt={item.title} />
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
+          <div key={item.title} className="lg:flex lg:items-start lg:gap-x-6">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-1/5 max-w-[100px] mb-4 lg:w-12 xl:w-16"
+            />
+            <div>
+              <h2 className="font-semibold text-lg">{item.title}</h2>
+              <p className="my-4 font-light">{item.text}</p>
+              <a
+                href="#"
+                className="bg-blue-light inline-block px-4 py-3 rounded-md text-white text-sm transition-colors duration-200 hover:bg-blue-medium"
+              >
+                {item.button}
+              </a>
+            </div>
           </div>
         );
       })}

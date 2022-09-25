@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         blue: {
           light: "rgb(0, 101, 255)",
-          medium: "rgb(0, 82, 255)",
+          medium: "rgb(0, 62, 205)",
           dull: "rgb(23, 43, 77)",
           dark: "rgb(9, 30, 66)",
         },
