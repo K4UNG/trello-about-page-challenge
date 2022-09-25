@@ -25,6 +25,13 @@ const data = [
     text: "Trello makes it easy to keep everyone on the same page. As changes happen, the real-time updates with email notifications have been key.",
     image: "./detroit-red-wings.svg",
   },
+  {
+    name: "HALEY ENNES",
+    role: "HR Manger,Sprout Social",
+    industry: "Marketing",
+    text: "Now that we've switched to a remote environment, with the use of Trello, we can now limit the number of meetings we have regarding specific projects and turn to Trello for updates instead.",
+    image: "./sprout-social.svg",
+  },
 ];
 
 const Testimonials = () => {
@@ -86,13 +93,13 @@ const Testimonials = () => {
           })}
         </div>
         <button
-          className="bg-white rounded-md w-8 h-8 font-bold"
+          className="bg-white border-transparent w-8 h-8 font-bold hover:text-green-bright border hover:border-inherit"
           onClick={prevSlide}
         >
           {"<"}
         </button>
         <button
-          className="bg-white rounded-md w-8 h-8 font-bold"
+          className="bg-white border-transparent w-8 h-8 font-bold hover:text-green-bright hover:border-inherit border"
           onClick={nextSlide}
         >
           {">"}
