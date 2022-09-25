@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="shadow-md md:hover:shadow-xl transition-[box-shadow]">
+    <nav className="shadow-md md:hover:shadow-xl md:transition-[box-shadow] md:shadow-sm relative">
       <div className="relative md:flex justify-between">
         <div className="p-3 flex justify-between items-center">
           <a
@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`relative overflow-hidden ${
+          className={`absolute inset-x-0 top-full bg-white overflow-hidden ${
             menu ? "h-screen" : "h-0"
           } duration-500 ease-in-out transition-[height] md:hidden`}
         >

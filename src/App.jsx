@@ -6,9 +6,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto">
+      <main className="container mx-auto max-w-[1140px]">
         <Hero />
-      </div>
+      </main>
     </div>
   );
 };
