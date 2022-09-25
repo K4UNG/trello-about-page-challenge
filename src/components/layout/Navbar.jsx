@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "../ui/Logo";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -19,7 +20,12 @@ const Navbar = () => {
     <nav className="shadow-md md:hover:shadow-xl transition-[box-shadow]">
       <div className="relative md:flex justify-between">
         <div className="p-3 flex justify-between items-center">
-          <div className="text-2xl font-bold md:text-3xl">Trello</div>
+          <a
+            href="/"
+            className="text-2xl inline-block font-bold md:text-3xl py-2"
+          >
+            <Logo />
+          </a>
           <ul className="hidden md:flex">
             {links.map((link) => (
               <li key={link} className="ml-12">
