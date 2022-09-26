@@ -9,7 +9,9 @@ import Testimonials from "./components/layout/Testimonials";
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <div className="sticky z-50 top-0">
+        <Navbar />
+      </div>
       <main>
         <div className="hero-gradient">
           <div className="container mx-auto xl:max-w-[1140px]">
@@ -21,7 +23,7 @@ const App = () => {
           <Info />
           <Learn />
         </div>
-        <div className="bg-green-light">
+        <div className="bg-green-light relative">
           <div className="container mx-auto xl:max-w-[1140px]">
             <Testimonials />
           </div>

@@ -85,8 +85,8 @@ const Testimonials = () => {
               <button
                 key={i}
                 className={`${
-                  page === i ? "w-12 bg-green-bright" : "w-2"
-                } h-2 rounded-full bg-blue-dark duration-200 hover:bg-green-bright`}
+                  page === i ? "w-12 bg-green-bright" : "w-2 bg-blue-dark"
+                } h-2 rounded-full duration-200 lg:hover:bg-green-bright`}
                 onClick={() => setPage(i)}
               />
             );
@@ -144,8 +144,8 @@ const Testimonials = () => {
             <button
               key={i}
               className={`${
-                page === i ? "w-12 bg-green-bright" : "w-2"
-              } h-2 rounded-full bg-blue-dark duration-200 hover:bg-green-bright`}
+                page === i ? "w-12 bg-green-bright" : "w-2 bg-blue-dark"
+              } h-2 rounded-full duration-200 lg:hover:bg-green-bright`}
               onClick={() => setPage(i)}
             />
           );

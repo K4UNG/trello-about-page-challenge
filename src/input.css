@@ -6,6 +6,13 @@
   overflow: visible;
 }
 
+@layer base {
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 @layer utilities {
   .hero-gradient {
     background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255))
