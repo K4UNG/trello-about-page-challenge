@@ -18,6 +18,10 @@
     background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255))
       no-repeat;
   }
+
+  .contact-gradient {
+    background: linear-gradient(rgb(64, 50, 148), rgb(76, 154, 255)) no-repeat;
+  }
 }
 
 @layer components {

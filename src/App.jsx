@@ -5,6 +5,7 @@ import About from "./components/layout/About";
 import Info from "./components/layout/Info";
 import Learn from "./components/layout/Learn";
 import Testimonials from "./components/layout/Testimonials";
+import Contact from "./components/layout/Contact";
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
           <div className="container mx-auto xl:max-w-[1140px]">
             <Testimonials />
           </div>
+        </div>
+        <div className="container mx-auto xl:max-w-[1140px]">
+          <Contact />
         </div>
       </main>
     </div>

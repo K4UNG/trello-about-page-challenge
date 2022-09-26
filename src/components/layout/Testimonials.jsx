@@ -77,7 +77,7 @@ const Testimonials = () => {
   }
 
   return (
-    <div className="p-4 py-12 pt-24 md:max-w-2xl md:mx-auto lg:max-w-4xl overflow-x-hidden">
+    <div className="p-4 py-12 pt-24 md:max-w-2xl md:mx-auto lg:max-w-4xl overflow-x-hidden md:pb-16">
       <div className="hidden md:flex justify-end items:center gap-x-4 mb-8">
         <div className="flex justify-end gap-x-2 items-center">
           {data.map((_, i) => {
