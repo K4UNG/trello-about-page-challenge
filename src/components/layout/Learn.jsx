@@ -51,7 +51,7 @@ const Learn = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="md:w-80 lg:w-96"
+              className="md:w-80 lg:w-96 mb-8 w-4/5 mx-auto"
             />
             <div>
               <span className="uppercase text-sm">{item.badge}</span>
