@@ -19,12 +19,12 @@ const LogoWhite = () => {
           y1="99.983977%"
           y2=".032046%"
         >
-          <stop offset="0" stopColor="#fff" stop-opacity=".5"></stop>
-          <stop offset=".15" stopColor="#fff" stop-opacity=".65"></stop>
-          <stop offset=".3" stopColor="#fff" stop-opacity=".78"></stop>
-          <stop offset=".46" stopColor="#fff" stop-opacity=".88"></stop>
-          <stop offset=".62" stopColor="#fff" stop-opacity=".95"></stop>
-          <stop offset=".8" stopColor="#fff" stop-opacity=".99"></stop>
+          <stop offset="0" stopColor="#fff" stopOpacity=".5"></stop>
+          <stop offset=".15" stopColor="#fff" stopOpacity=".65"></stop>
+          <stop offset=".3" stopColor="#fff" stopOpacity=".78"></stop>
+          <stop offset=".46" stopColor="#fff" stopOpacity=".88"></stop>
+          <stop offset=".62" stopColor="#fff" stopOpacity=".95"></stop>
+          <stop offset=".8" stopColor="#fff" stopOpacity=".99"></stop>
           <stop offset="1" stopColor="#fff"></stop>
         </linearGradient>
         <g fill="none" fillRule="evenodd">

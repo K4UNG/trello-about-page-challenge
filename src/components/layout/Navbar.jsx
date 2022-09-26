@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../ui/Logo";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [scroll, setScroll] = useState(
+    document.documentElement.scrollTop !== 0
+  );
   const links = ["Features", "Solutions", "Plans", "Pricing", "Resources"];
 
   function toggleMenu() {
@@ -16,8 +19,24 @@ const Navbar = () => {
     });
   }
 
+  useEffect(() => {
+    function scrollHandler() {
+      const progress = document.documentElement.scrollTop;
+      if (progress === 0) {
+        setScroll(false);
+      } else if (progress > 0 && !scroll) {
+        setScroll(true);
+      }
+    }
+    window.addEventListener("scroll", scrollHandler);
+  }, []);
+
   return (
-    <nav className="shadow-md md:hover:shadow-lg md:transition-[box-shadow] bg-white">
+    <nav
+      className={`md:hover:shadow-xl transition-[box-shadow] bg-white ${
+        scroll ? "shadow-xl" : "shadow-md"
+      }`}
+    >
       <div className="relative md:flex justify-between">
         <div className="p-3 flex justify-between items-center">
           <a
