@@ -6,6 +6,7 @@ import Info from "./components/layout/Info";
 import Learn from "./components/layout/Learn";
 import Testimonials from "./components/layout/Testimonials";
 import Contact from "./components/layout/Contact";
+import Footer from "./components/layout/Footer";
 
 const App = () => {
   return (
@@ -31,6 +32,11 @@ const App = () => {
         </div>
         <div className="container mx-auto xl:max-w-[1140px]">
           <Contact />
+        </div>
+        <div className="bg-blue-footer">
+          <div className="container mx-auto xl:max-w-[1140px]">
+            <Footer />
+          </div>
         </div>
       </main>
     </div>

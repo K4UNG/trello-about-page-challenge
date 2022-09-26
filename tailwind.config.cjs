@@ -10,10 +10,12 @@ module.exports = {
         body: ["Merriweather Sans", "sans-serif"],
       },
       colors: {
+        hover: "rgba(255, 255, 255, .1)",
         blue: {
           light: "rgb(0, 101, 255)",
           medium: "rgb(0, 62, 205)",
           dull: "rgb(23, 43, 77)",
+          footer: "rgb(23, 43, 77)",
           dark: "rgb(9, 30, 66)",
         },
         green: {
