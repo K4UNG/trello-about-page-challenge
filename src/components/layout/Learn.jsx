@@ -59,8 +59,14 @@ const Learn = () => {
                 {item.title}
               </h3>
               <p className="font-light leading-7 md:text-lg">{item.text}</p>
-              <a href="#" className="font-semibold mt-4 inline-block text-lg">
-                <span className="mr-1 md:text-xl">+</span> Learn more
+              <a
+                href="#"
+                className="font-semibold mt-4 inline-block text-lg group"
+              >
+                <span className="mr-1 md:text-xl group-hover:rotate-90 inline-block transition-transform duration-150">
+                  +
+                </span>{" "}
+                Learn more
               </a>
             </div>
           </div>

@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav
       className={`md:hover:shadow-xl transition-[box-shadow] bg-white ${
-        scroll ? "shadow-xl" : "shadow-md"
+        scroll ? "shadow-xl" : "shadow-none"
       }`}
     >
       <div className="relative md:flex justify-between">
